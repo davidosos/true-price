@@ -51,7 +51,7 @@ gray = cv2.filter2D(gr,-1,kernel)
 if sys.platform == "win32":
     pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 else:
-    pytesseract.pytesseract.tesseract_cmd = r'/snap/bin/tesseract'
+    pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 match shop:
     #May be changed when needed
     case "Albert" | "Billa" | "Lidl" | "Kaufland" | "Globus":
