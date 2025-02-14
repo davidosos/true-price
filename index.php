@@ -23,6 +23,7 @@
             echo("Analyzing...    ");
             $output = shell_exec(command: "python3 analyze.py Albert " . $_FILES["userfile"]['tmp_name']);
             echo $output;
+            echo "Done.";
         }else{
             echo("No set file");
         }
