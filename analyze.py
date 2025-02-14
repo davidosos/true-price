@@ -67,3 +67,5 @@ match shop:
             print(dataDict["text"][lastFoundIndex])
         else:
             print('Couldnt find valid word')
+    case _:
+        print("Invalid shop.")
