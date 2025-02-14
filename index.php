@@ -21,7 +21,7 @@
         error_reporting(E_ALL);
         if(isset($_FILES["userfile"])){
             echo("Analyzing...    ");
-            $output = shell_exec(command: "python3 analyze.py Albert " . $_FILES["userfile"]['tmp_name']);
+            $output = shell_exec(command: "true-price-venv/bin/python3 analyze.py Albert " . $_FILES["userfile"]['tmp_name']);
             echo $output;
             echo "Done.";
         }else{
